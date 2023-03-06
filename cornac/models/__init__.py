@@ -60,6 +60,8 @@ from .vaecf import VAECF
 from .vbpr import VBPR
 from .vmf import VMF
 from .wmf import WMF
+from .autorec import AutoRec
+from .km import KMeans
 
 try:
     from .fm import FM
