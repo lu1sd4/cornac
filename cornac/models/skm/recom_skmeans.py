@@ -170,7 +170,7 @@ class SKMeans(Recommender):
                     % (user_idx, item_idx)
                 )
 
-            user_pred = self.centroids[item_idx, :].multiply(
+            user_pred = self.centroids[:, item_idx].multiply(
                 self.user_center_sim[user_idx, :].T
             )
             # transform user_pred to a flatten array
